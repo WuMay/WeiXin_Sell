@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    #url: jdbc:mysql://192.168.43.164/sell?characterEncoding=utf-8
+    url: jdbc:mysql:///sell?characterEncoding=utf-8
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.43.164
+    port: 6379
+server:
+  context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level:
+#    com.imooc.LoggerTest: debug
+wechat:
+  mpAppId: wxb0c980f17d668fb4
+  mpAppSecret: 105e86063b180f1d927c7770aed5211f
